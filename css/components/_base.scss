@@ -1,0 +1,54 @@
+// * Variables
+$primary-red: #f53838;
+$back-red: #ffecec;
+$back-card: #f8f8f8;
+$background-color: #f6f6f6;
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(phone) {
+		font-size: 37%;
+	}
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #010e1b;
+	width: 100vw;
+	height: 100vh;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
