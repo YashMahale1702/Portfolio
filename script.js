@@ -8,7 +8,7 @@ particlesJS('particles-js', {
 			}
 		},
 		color: {
-			value: '#FDF6EC'
+			value: [ '#FDF6EC', '#BD10E0', '#B8E986', '#50E3C2', '#FFD300', '#E86363' ]
 		},
 		shape: {
 			type: 'circle',
@@ -110,7 +110,7 @@ particlesJS('particles-js', {
 });
 
 var typed = new Typed('.main_typing-dynamic', {
-	strings: [ 'Flutter Developer', 'web Developer', 'Coder' ],
+	strings: [ 'Flutter Developer.', 'web Developer.', 'Coder.' ],
 	smartBackspace: true,
 	loop: true,
 	typeSpeed: 100,
