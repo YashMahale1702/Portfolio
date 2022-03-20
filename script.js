@@ -110,7 +110,7 @@ particlesJS('particles-js', {
 });
 
 var typed = new Typed('.main_typing-dynamic', {
-	strings: [ 'Flutter Developer', 'UI Designer', 'Coder' ],
+	strings: [ 'Flutter Developer', 'web Developer', 'Coder' ],
 	smartBackspace: true,
 	loop: true,
 	typeSpeed: 100,

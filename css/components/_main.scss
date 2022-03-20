@@ -19,10 +19,12 @@
 
 		&-dynamic {
 			color: gold;
+			font-weight: 600;
 		}
 	}
 
 	&_social {
+		z-index: 20;
 		& > a > i {
 			color: white;
 			font-size: 2.4rem;
