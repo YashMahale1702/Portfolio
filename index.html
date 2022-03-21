@@ -14,35 +14,59 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
         <title>Portfolio </title>
     </head>
 
     <body>
 
+        <!-- Particles -->
         <div id="particles-js"></div>
 
 
-        <div class="container">
-            <div class="main">
-                <h1 class="main_name">
-                    Yash Mahale
-                </h1>
-                <h3 class="main_typing">
-                    I'm a <span class="main_typing-dynamic"></span>
-                </h3>
-                <div class="main_social">
-                    <a href="https://github.com/YashMahale1702" class="github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/yash-mahale/" class="linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/yash___mahale/" class="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
+        <!-- Navbar -->
+        <nav class="nav">
+            <div class="nav-brand"><span>Yash</span></div>
+            <div class="nav-list">
+                <a class="nav-items" href="#">Resume</a>
+                <a class="nav-items" href="#">Projects</a>
+                <a class="nav-items" href="#">Contact</a>
+            </div>
+            <!-- <span class="nav-icon" id="nav-icon-id">&nbsp;</span> -->
+            <a href="#" class="nav-icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+
+        <div class="nav-list-container hidden">
+            <a class="nav-list-container-items" href="#">Resume</a>
+            <a class="nav-list-container-items" href="#">Projects</a>
+            <a class="nav-list-container-items" href="#">Contact</a>
+        </div>
+
+        <!-- <div class="overlay"></div> -->
+
+
+        <!-- Main Container -->
+        <div class="main">
+            <h1 class="main_name">
+                Yash Mahale
+            </h1>
+            <h3 class="main_typing">
+                I'm a <span class="main_typing-dynamic"></span>
+            </h3>
+            <div class="main_social">
+                <a href="https://github.com/YashMahale1702" class="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yash-mahale/" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/yash___mahale/" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
         </div>
 
@@ -52,6 +76,9 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <script src="https://kit.fontawesome.com/196da9c828.js" crossorigin="anonymous"></script>
         <script src="./script.js"></script>
+
+        <!-- typed -->
+
     </body>
 
 </html>

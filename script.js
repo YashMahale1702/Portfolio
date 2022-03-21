@@ -1,3 +1,29 @@
+var typed = new Typed('.main_typing-dynamic', {
+	strings: [ 'Flutter Developer.', 'Web Developer.', 'UI Designer.' ],
+	smartBackspace: true,
+	loop: true,
+	typeSpeed: 100,
+	backSpeed: 40
+});
+
+const container = document.querySelector('.nav-list-container');
+const menu = document.querySelector('.fa-bars');
+const icon = document.querySelector('.nav-icon');
+
+icon.addEventListener('click', function() {
+	container.classList.toggle('hidden');
+
+	if (menu.classList.contains('fa-bars')) {
+		menu.classList.replace('fa-bars', 'fa-xmark');
+	} else {
+		menu.classList.replace('fa-xmark', 'fa-bars');
+	}
+
+	// if (container.classList.contains('.hidden')) {
+	// 	container.classList.add('aniamte-zoom-out');
+	// }
+});
+
 particlesJS('particles-js', {
 	particles: {
 		number: {
@@ -107,12 +133,4 @@ particlesJS('particles-js', {
 		}
 	},
 	retina_detect: true
-});
-
-var typed = new Typed('.main_typing-dynamic', {
-	strings: [ 'Flutter Developer.', 'web Developer.', 'Coder.' ],
-	smartBackspace: true,
-	loop: true,
-	typeSpeed: 100,
-	backSpeed: 40
 });

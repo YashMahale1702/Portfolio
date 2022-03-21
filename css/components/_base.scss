@@ -1,8 +1,10 @@
 // * Variables
-$primary-red: #f53838;
+$primary-gold: gold;
+$color-white: #dee2e6;
 $back-red: #ffecec;
 $back-card: #f8f8f8;
-$background-color: #f6f6f6;
+$background-color: #010e1b;
+$button-z-index: 20;
 
 *,
 *::after,
@@ -29,15 +31,20 @@ html {
 	}
 
 	@include respond(phone) {
-		font-size: 37%;
+		font-size: 38%;
 	}
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	background-color: #010e1b;
-	width: 100vw;
-	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+	background-color: $background-color;
+
+	display: grid;
+	grid-template-columns: minmax(6rem, 0.5fr) repeat(6, 1fr) minmax(6rem, 0.5fr);
+	grid-template-rows: 6rem max-content;
+	grid-auto-flow: max-content;
+	// width: 100vw;
+	// height: 100vh;
 }
 
 #particles-js {
@@ -46,10 +53,4 @@ body {
 	height: 100%;
 	z-index: 10;
 	cursor: url('../../assets/pointer.png');
-}
-
-.container {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
 }
