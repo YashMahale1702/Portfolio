@@ -1,7 +1,7 @@
 .main {
 	grid-row: 2/3;
 	grid-column: 2/8;
-	height: calc(100vh - 6rem);
+	height: calc(100vh - 8rem);
 
 	display: flex;
 	flex-direction: column;
@@ -11,7 +11,7 @@
 	color: $color-white;
 
 	&_name {
-		font-size: 4.8rem;
+		font-size: 5.5rem;
 		font-weight: bold;
 	}
 
@@ -21,10 +21,14 @@
 
 		&-dynamic {
 			color: $primary-gold;
-			font-weight: 600;
+			font-weight: bold;
 			text-decoration: underline;
 
 			// line-height: 1.6;
+		}
+
+		& > .typed-cursor {
+			color: $primary-gold;
 		}
 	}
 

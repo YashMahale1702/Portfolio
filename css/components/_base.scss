@@ -1,5 +1,5 @@
 // * Variables
-$primary-gold: gold;
+$primary-gold: #ffd700;
 $color-white: #dee2e6;
 $back-red: #ffecec;
 $back-card: #f8f8f8;
@@ -38,19 +38,21 @@ html {
 body {
 	font-family: 'Quicksand', sans-serif;
 	background-color: $background-color;
+	// position: absolute;
 
 	display: grid;
 	grid-template-columns: minmax(6rem, 0.5fr) repeat(6, 1fr) minmax(6rem, 0.5fr);
-	grid-template-rows: 6rem max-content;
+	grid-template-rows: 8rem max-content;
 	grid-auto-flow: max-content;
 	// width: 100vw;
 	// height: 100vh;
 }
+
+//* Particles
 
 #particles-js {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	z-index: 10;
-	cursor: url('../../assets/pointer.png');
 }
