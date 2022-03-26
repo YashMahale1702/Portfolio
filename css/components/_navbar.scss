@@ -18,6 +18,7 @@
 
 		background-image: linear-gradient(to right bottom, $primary-gold, #e15fed);
 		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 
 		@include respond(tab-port) {
@@ -27,9 +28,11 @@
 
 	//Only for mobile
 	&-list-container {
+		// @include respond(big-desktop) {
 		display: none;
 		visibility: hidden;
 		opacity: 0;
+		// }
 
 		@include respond(phone) {
 			position: absolute;
@@ -51,12 +54,23 @@
 			padding: 3rem 5rem;
 			font-size: 2.6rem;
 			box-shadow: 0 0.5rem 1.5rem rgba($color: #000000, $alpha: 0.1);
-			animation: fade 0.3s ease-in;
-			background-color: rgba($color: $background-color, $alpha: 0.15);
+			background-color: rgba($color: $background-color, $alpha: 0.7);
 			border: 1px solid rgba($color: $primary-gold, $alpha: 0.15);
 			box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.15);
+			// animation: zoom 0.3s ease-in;
+			transition: all 0.5s ease;
+
 			backdrop-filter: blur(10px);
 			z-index: 30;
+
+			&-hidden {
+				// display: none;
+				opacity: 0;
+				visibility: hidden;
+				// animation: zoom 0.5s ease-in;
+				animation-direction: alternate-reverse;
+				transition: all 0.7s ease;
+			}
 
 			&-items {
 				cursor: pointer;
@@ -75,7 +89,7 @@
 
 				&::before {
 					content: '';
-					background-image: linear-gradient(to right, $primary-gold, #d57eeb);
+					background-image: linear-gradient(to right, $primary-gold, $primary-gold);
 					position: absolute;
 					height: 1.5px;
 					width: 100%;
@@ -122,7 +136,7 @@
 
 			&::before {
 				content: '';
-				background-image: linear-gradient(to right, $primary-gold, #d57eeb);
+				background-image: linear-gradient(to right, $primary-gold, $primary-gold);
 				position: absolute;
 				height: 1.5px;
 				width: 100%;
@@ -147,19 +161,20 @@
 			visibility: visible;
 			font-size: 2.5rem;
 			color: $color-white;
+			transition: all 0.3s ease;
 		}
 	}
 }
 
-.hidden {
-	display: none;
-	opacity: 0;
-	visibility: none;
-}
+// .hidden {
+// 	display: none;
+// 	opacity: 0;
+// 	visibility: hidden;
+// }
 
-.aniamte-zoom-out {
-	animation: zoom-out 0.3s ease;
-}
-.aniamte-zoom-in {
-	animation: zoom 0.3s ease;
-}
+// .aniamte-zoom-out {
+// 	animation: zoom-out 0.3s ease;
+// }
+// .aniamte-zoom-in {
+// 	animation: zoom 0.3s ease;
+// }
