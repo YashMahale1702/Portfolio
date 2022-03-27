@@ -28,11 +28,9 @@
 
 	//Only for mobile
 	&-list-container {
-		// @include respond(big-desktop) {
 		display: none;
 		visibility: hidden;
 		opacity: 0;
-		// }
 
 		@include respond(phone) {
 			position: absolute;
@@ -44,6 +42,7 @@
 
 			visibility: visible;
 			opacity: 1;
+			transform: scale(1);
 			list-style: none;
 			display: flex;
 			flex-direction: column;
@@ -57,8 +56,7 @@
 			background-color: rgba($color: $background-color, $alpha: 0.7);
 			border: 1px solid rgba($color: $primary-gold, $alpha: 0.15);
 			box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.15);
-			// animation: zoom 0.3s ease-in;
-			transition: all 0.5s ease;
+			transition: all 0.5s ease-in-out;
 
 			backdrop-filter: blur(10px);
 			z-index: 30;
@@ -67,9 +65,8 @@
 				// display: none;
 				opacity: 0;
 				visibility: hidden;
-				// animation: zoom 0.5s ease-in;
-				animation-direction: alternate-reverse;
-				transition: all 0.7s ease;
+				transform: scale(0);
+				transition: all 0.5s ease-out;
 			}
 
 			&-items {
@@ -159,7 +156,8 @@
 			opacity: 1;
 			display: block;
 			visibility: visible;
-			font-size: 2.5rem;
+			padding: 1rem;
+			font-size: 2.6rem;
 			color: $color-white;
 			transition: all 0.3s ease;
 		}
