@@ -43,6 +43,7 @@
 		width: 4rem;
 		overflow: hidden;
 		opacity: 0.5;
+		animation: move-up-down 8s ease-in infinite both;
 	}
 
 	&-square-blue {
@@ -54,6 +55,7 @@
 		width: 4rem;
 		transform: rotateZ(45deg);
 		opacity: 0.5;
+		animation: move-up-down 6s ease-in infinite 1s both;
 	}
 
 	&-circle-dots {

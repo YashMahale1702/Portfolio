@@ -74,6 +74,20 @@
 	}
 }
 
+@keyframes move-up-down {
+	0% {
+		transform: translateY(0) rotateZ(45deg);
+	}
+
+	50% {
+		transform: translateY(20px) rotateZ(45deg);
+	}
+
+	100% {
+		transform: translateY(0) rotateZ(45deg);
+	}
+}
+
 @keyframes fade {
 	0% {
 		opacity: 0;

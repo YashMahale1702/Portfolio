@@ -12,8 +12,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
         <title>Portfolio </title>
     </head>
@@ -21,28 +20,27 @@
     <body>
 
         <!-- Particles -->
-        <div id="particles-js"></div>
+        <div id="particles-js" class="rellax" data-rellax-speed="3"></div>
 
         <!-- abstarct Images-->
         <div class="back">
             <!-- <img src="./assets/circle.svg" alt="" class="back-circle" draggable="false"> -->
             <!-- <img src="./assets/curve.png" alt="" class="back-curve" draggable="false"> -->
             <!-- <img src="./assets/wave.png" alt="" class="back-wave" draggable="false"> -->
-            <img src="./assets/Ornament 4.svg" alt="" class="back-circle-green" draggable="false">
-            <img src="./assets/Ornament 40.svg" alt="" class="back-square-blue" draggable="false">
+            <img src="./assets/Ornament_4.svg" alt="" class="back-circle-green " draggable="false">
+            <img src="./assets/Ornament_40.svg" alt="" class="back-square-blue" draggable="false">
             <img src="./assets/circle_dots.svg" alt="" class="back-circle-dots" draggable="false">
         </div>
-
 
         <!-- Navbar -->
         <nav class="nav">
             <div class="nav-brand"><span>Yash</span></div>
             <div class="nav-list">
                 <a class="nav-items" href="#">Home</a>
-                <a class="nav-items" href="#">Projects</a>
+                <a class="nav-items" href="#projects">Projects</a>
                 <a class="nav-items" href="Files/Yash Mahale_KLE Tech University.pdf" attributes-list
                     download="Resume">Resume</a>
-                <a class="nav-items" href="#">Contact</a>
+                <!-- <a class="nav-items" href="#contact">Contact</a> -->
             </div>
             <!-- <span class="nav-icon" id="nav-icon-id">&nbsp;</span> -->
             <a href="#" class="nav-icon">
@@ -53,17 +51,14 @@
         <!-- relative container -->
         <div class="nav-list-container nav-list-container-hidden">
             <a class="nav-list-container-items" href="#">Home</a>
-            <a class="nav-list-container-items" href="#">Projects</a>
+            <a class="nav-list-container-items" href="#projects">Projects</a>
             <a class="nav-list-container-items" href="Files/Yash Mahale_KLE Tech University.pdf" attributes-list
                 download="Resume">Resume</a>
-            <a class="nav-list-container-items" href="#">Contact</a>
+            <!-- <a class="nav-list-container-items" href="#contact">Contact</a> -->
         </div>
 
-        <!-- <div class="overlay"></div> -->
-
-
         <!-- Main Container -->
-        <div class="main">
+        <section class="main">
             <h1 class="main_name">
                 Yash Mahale
             </h1>
@@ -81,20 +76,42 @@
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
-        </div>
+        </section>
+
+        <section class="cards" id="projects">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <figure class="card-img_picture">
+                    <img src="./assets/projects/weatherapp.svg" alt="" class="card-img_img" draggable="false" />
+                </figure>
+                <div class="card-heading">Weather App</div>
+            </div>
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <figure class="card-img_picture">
+                    <img src="./assets/projects/wallpaper.svg" alt="" class="card-img_img" draggable="false" />
+                </figure>
+                <div class="card-heading">Wallpaper App</div>
+            </div>
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <figure class="card-img_picture">
+                    <img src="./assets/projects/VPN Landing page.svg" alt="" class="card-img_img" draggable="false" />
+                </figure>
+                <div class="card-heading">VPN Landing Page</div>
+            </div>
+        </section>
+
+
 
         <!-- Projects -->
-        <!-- <div class="projects">
-
-        </div> -->
-
-
 
         <!-- script tags -->
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <script src="https://kit.fontawesome.com/196da9c828.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+        <script src="./rellax.js"></script>
         <script src="./script.js"></script>
+        <!-- <script type="text/javascript" src="simpleParallax.js"></script> -->
 
     </body>
 

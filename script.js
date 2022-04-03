@@ -1,3 +1,5 @@
+var rellax = new Rellax('.rellax');
+
 var typed = new Typed('.main_typing-dynamic', {
 	strings: [ 'Flutter Developer.', 'Web Developer.', 'UI Designer.' ],
 	smartBackspace: true,
@@ -7,10 +9,21 @@ var typed = new Typed('.main_typing-dynamic', {
 });
 
 const container = document.querySelector('.nav-list-container');
+const containerItem = document.querySelector('.nav-list-container-items');
 const menu = document.querySelector('.fa-bars');
 const icon = document.querySelector('.nav-icon');
 
 icon.addEventListener('click', function() {
+	container.classList.toggle('nav-list-container-hidden');
+
+	if (menu.classList.contains('fa-bars')) {
+		menu.classList.replace('fa-bars', 'fa-xmark');
+	} else {
+		menu.classList.replace('fa-xmark', 'fa-bars');
+	}
+});
+
+containerItem.addEventListener('click', function() {
 	container.classList.toggle('nav-list-container-hidden');
 
 	if (menu.classList.contains('fa-bars')) {
@@ -31,6 +44,7 @@ particlesJS('particles-js', {
 		},
 		color: {
 			value: [ '#FDF6EC', '#FFD300', '#B8E986', '#50E3C2' ]
+			// value: [ '#FDF6EC' ]
 		},
 		shape: {
 			type: 'circle',

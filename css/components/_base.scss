@@ -4,8 +4,36 @@ $color-white: #dee2e6;
 $back-red: #ffecec;
 $back-card: #f8f8f8;
 $background-color: #010e1b;
+$scrollbar-color: orange;
+$card-color: #010e1b;
+// $background-color: #02253e;
 $button-z-index: 20;
 
+// Scrollbar
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px #94adcf;
+	border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	// background: rgba($color: #005468, $alpha: 0.8);
+	background: rgba($color: $scrollbar-color, $alpha: 0.8);
+	border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $scrollbar-color;
+}
+
+///////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 *,
 *::after,
 *::before {
@@ -42,7 +70,7 @@ body {
 
 	display: grid;
 	grid-template-columns: minmax(6rem, 1fr) repeat(6, 1fr) minmax(6rem, 1fr);
-	grid-template-rows: 8rem max-content;
+	grid-template-rows: 8rem max-content max-content max-content;
 	grid-auto-flow: max-content;
 	overflow-x: hidden;
 }
