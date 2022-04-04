@@ -682,7 +682,7 @@ body {
   grid-row: 3 / 4;
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 8rem 0rem 5rem 0rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(28rem, 1fr))[auto-fit];
@@ -754,11 +754,11 @@ body {
 }
 
 .card-heading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
   position: relative;
   cursor: pointer;
-  margin: 1rem 2rem;
+  margin: 0rem 2rem 1rem 2rem;
   padding: 0.5rem 0rem;
   outline: none;
 }
@@ -776,6 +776,78 @@ body {
           transform: scaleX(0);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.projects_footer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2 / 8;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem 8rem 0rem;
+  text-decoration: none;
+  font-size: 1.9rem;
+}
+
+.projects_footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 20;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 4rem;
+  background-color: #010e1b;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.projects_footer-button:hover {
+  border: 2px solid gold;
+}
+
+.projects_footer-button:hover > span {
+  padding-right: 1.5rem;
+}
+
+.projects_footer-button:hover > i {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.projects_footer-button > span {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-right: 1rem;
+  text-align: center;
 }
 
 .contact {
