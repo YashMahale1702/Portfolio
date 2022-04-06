@@ -473,8 +473,8 @@ body {
   .nav-list-container-hidden {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }
@@ -714,6 +714,7 @@ body {
   background-color: rgba(1, 14, 27, 0.1);
   z-index: 20;
   text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .card:hover .card-btn {

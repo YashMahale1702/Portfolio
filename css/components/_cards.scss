@@ -23,6 +23,7 @@
 	background-color: rgba($color: $card-color, $alpha: 0.1);
 	z-index: $button-z-index;
 	text-decoration: none;
+	font-family: 'IBM Plex Mono', monospace;
 
 	&:hover .card-btn {
 		color: white;
