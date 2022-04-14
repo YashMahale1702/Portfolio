@@ -30,6 +30,10 @@
 		background-color: $primary-gold;
 	}
 
+	&:hover {
+		transform: scale(1.1);
+	}
+
 	& > * {
 		margin-bottom: 2rem;
 	}

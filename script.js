@@ -1,5 +1,3 @@
-var rellax = new Rellax('.rellax');
-
 var typed = new Typed('.main_typing-dynamic', {
 	strings: [ 'Flutter Developer.', 'Web Developer.', 'UI Designer.' ],
 	smartBackspace: true,

@@ -722,6 +722,11 @@ body {
   background-color: #ffd700;
 }
 
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .card > * {
   margin-bottom: 2rem;
 }
