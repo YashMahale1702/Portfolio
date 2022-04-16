@@ -25,13 +25,19 @@
 	text-decoration: none;
 	font-family: 'IBM Plex Mono', monospace;
 
+	//
+	backdrop-filter: blur(10px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.75);
+	border-radius: 12px;
+	box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.4);
+
 	&:hover .card-btn {
 		color: white;
 		background-color: $primary-gold;
 	}
 
 	&:hover {
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	& > * {
@@ -114,9 +120,10 @@
 		justify-content: center;
 		align-items: center;
 		padding: 2rem 4rem;
-		background-color: $card-color;
+		background-color: rgba(17, 25, 40, 0.75);
+		box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.2);
 		color: white;
-		border: 2px solid rgba($color: white, $alpha: 0.2);
+		// border: 2px solid rgba($color: white, $alpha: 0.2);
 		border-radius: 1rem;
 		text-decoration: none;
 		transition: all 0.3s ease;
