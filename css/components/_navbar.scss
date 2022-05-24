@@ -1,6 +1,7 @@
 .nav {
 	grid-row: 1 / 2;
 	grid-column: 2 / 8;
+	animation: fade-down 0.5s 2.3s both;
 
 	display: flex;
 	justify-content: space-between;
@@ -96,8 +97,12 @@
 				}
 
 				&::before {
-					content: '';
-					background-image: linear-gradient(to right, $primary-gold, $primary-gold);
+					content: "";
+					background-image: linear-gradient(
+						to right,
+						$primary-gold,
+						$primary-gold
+					);
 					position: absolute;
 					height: 1.5px;
 					width: 100%;
@@ -143,8 +148,12 @@
 			}
 
 			&::before {
-				content: '';
-				background-image: linear-gradient(to right, $primary-gold, $primary-gold);
+				content: "";
+				background-image: linear-gradient(
+					to right,
+					$primary-gold,
+					$primary-gold
+				);
 				position: absolute;
 				height: 1.5px;
 				width: 100%;

@@ -4,7 +4,7 @@ $color-white: #dee2e6;
 $back-red: #ffecec;
 $back-card: #f8f8f8;
 $background-color: #010e1b;
-$scrollbar-color: orange;
+$scrollbar-color: gold;
 $card-color: #010e1b;
 // $background-color: #02253e;
 $button-z-index: 20;
@@ -23,13 +23,18 @@ $button-z-index: 20;
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	// background: rgba($color: #005468, $alpha: 0.8);
-	background: rgba($color: $scrollbar-color, $alpha: 0.8);
+	background: rgba($color: $scrollbar-color, $alpha: 0.95);
 	border-radius: 1rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: $scrollbar-color;
+}
+
+::selection {
+	color: white;
+	background-color: gold;
 }
 
 ///////////////////////////////////////////////////
@@ -64,7 +69,7 @@ html {
 }
 
 body {
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Quicksand", sans-serif;
 	background-color: $background-color;
 	position: relative;
 
@@ -73,4 +78,5 @@ body {
 	grid-template-rows: 8rem max-content max-content max-content;
 	grid-auto-flow: max-content;
 	overflow-x: hidden;
+	backface-visibility: hidden;
 }

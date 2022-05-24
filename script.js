@@ -1,58 +1,58 @@
-var typed = new Typed('.main_typing-dynamic', {
-	strings: [ 'Flutter Developer.', 'Web Developer.', 'UI Designer.' ],
+var typed = new Typed(".main_typing-dynamic", {
+	strings: ["Flutter Developer.", "Web Developer.", "UI Designer."],
 	smartBackspace: true,
 	loop: true,
 	typeSpeed: 100,
-	backSpeed: 40
+	backSpeed: 40,
 });
 
-const container = document.querySelector('.nav-list-container');
-const containerItem = document.querySelector('.nav-list-container-items');
-const menu = document.querySelector('.fa-bars');
-const icon = document.querySelector('.nav-icon');
+const container = document.querySelector(".nav-list-container");
+const containerItem = document.querySelector(".nav-list-container-items");
+const menu = document.querySelector(".fa-bars");
+const icon = document.querySelector(".nav-icon");
 
-icon.addEventListener('click', function() {
-	container.classList.toggle('nav-list-container-hidden');
+icon.addEventListener("click", function () {
+	container.classList.toggle("nav-list-container-hidden");
 
-	if (menu.classList.contains('fa-bars')) {
-		menu.classList.replace('fa-bars', 'fa-xmark');
+	if (menu.classList.contains("fa-bars")) {
+		menu.classList.replace("fa-bars", "fa-xmark");
 	} else {
-		menu.classList.replace('fa-xmark', 'fa-bars');
+		menu.classList.replace("fa-xmark", "fa-bars");
 	}
 });
 
-containerItem.addEventListener('click', function() {
-	container.classList.toggle('nav-list-container-hidden');
+containerItem.addEventListener("click", function () {
+	container.classList.toggle("nav-list-container-hidden");
 
-	if (menu.classList.contains('fa-bars')) {
-		menu.classList.replace('fa-bars', 'fa-xmark');
+	if (menu.classList.contains("fa-bars")) {
+		menu.classList.replace("fa-bars", "fa-xmark");
 	} else {
-		menu.classList.replace('fa-xmark', 'fa-bars');
+		menu.classList.replace("fa-xmark", "fa-bars");
 	}
 });
 
-particlesJS('particles-js', {
+particlesJS("particles-js", {
 	particles: {
 		number: {
 			value: 350,
 			density: {
 				enable: true,
-				value_area: 800
-			}
+				value_area: 800,
+			},
 		},
 		color: {
-			value: [ '#FDF6EC', '#FFD300', '#B8E986', '#50E3C2' ]
+			value: ["#FDF6EC", "#FFD300", "#B8E986", "#50E3C2"],
 			// value: [ '#FDF6EC' ]
 		},
 		shape: {
-			type: 'circle',
+			type: "circle",
 			stroke: {
 				width: 0,
-				color: '#FDF6EC'
+				color: "#FDF6EC",
 			},
 			polygon: {
-				nb_sides: 5
-			}
+				nb_sides: 5,
+			},
 			// image: {
 			// 	src: 'img/github.svg',
 			// 	width: 100,
@@ -66,8 +66,8 @@ particlesJS('particles-js', {
 				enable: true,
 				speed: 0.2,
 				opacity_min: 0,
-				sync: false
-			}
+				sync: false,
+			},
 		},
 		size: {
 			value: 2,
@@ -76,69 +76,69 @@ particlesJS('particles-js', {
 				enable: true,
 				speed: 2,
 				size_min: 0,
-				sync: false
-			}
+				sync: false,
+			},
 		},
 		line_linked: {
 			enable: false,
 			distance: 150,
-			color: '#ffffff',
+			color: "#ffffff",
 			opacity: 0.4,
-			width: 1
+			width: 1,
 		},
 		move: {
 			enable: true,
 			speed: 0.2,
-			direction: 'none',
+			direction: "none",
 			random: true,
 			straight: false,
-			out_mode: 'out',
+			out_mode: "out",
 			bounce: false,
 			attract: {
 				enable: false,
 				rotateX: 600,
-				rotateY: 1200
-			}
-		}
+				rotateY: 1200,
+			},
+		},
 	},
 	interactivity: {
-		detect_on: 'canvas',
+		detect_on: "canvas",
 		events: {
 			onhover: {
 				enable: true,
-				mode: 'bubble'
+				mode: "bubble",
 			},
 			onclick: {
 				enable: true,
-				mode: 'push'
+				mode: "push",
 			},
-			resize: true
+			resize: true,
 		},
 		modes: {
 			grab: {
 				distance: 400,
 				line_linked: {
-					opacity: 1
-				}
+					opacity: 1,
+				},
 			},
 			bubble: {
 				distance: 83.91608391608392,
 				size: 1,
 				duration: 3,
 				opacity: 1,
-				speed: 3
+				speed: 3,
 			},
 			repulse: {
 				distance: 200,
-				duration: 0.4
+				duration: 0.4,
 			},
 			push: {
-				particles_nb: 1
+				particles_nb: 1,
 			},
 			remove: {
-				particles_nb: 1
-			}
-		}
+				particles_nb: 1,
+			},
+		},
 	},
-	retina_detect: true
+	retina_detect: true,
 });

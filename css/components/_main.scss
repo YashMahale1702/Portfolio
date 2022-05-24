@@ -14,11 +14,13 @@
 	&_name {
 		font-size: 5.5rem;
 		font-weight: bold;
+		animation: fade-left 0.5s 2.6s both;
 	}
 
 	&_typing {
 		font-size: 2.6rem;
 		font-weight: 500;
+		animation: fade-up 0.5s 2.8s both;
 
 		&-dynamic {
 			color: $primary-gold;
@@ -34,7 +36,9 @@
 	}
 
 	&_social {
+		animation: fade-up 0.5s 3s both;
 		z-index: $button-z-index;
+
 		& > a > i {
 			color: $color-white;
 			font-size: 2.6rem;
