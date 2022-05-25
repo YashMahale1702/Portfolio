@@ -4,6 +4,7 @@ var typed = new Typed(".main_typing-dynamic", {
 	loop: true,
 	typeSpeed: 100,
 	backSpeed: 40,
+	startDelay: 3000,
 });
 
 const container = document.querySelector(".nav-list-container");
