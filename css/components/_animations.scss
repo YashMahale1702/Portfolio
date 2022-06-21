@@ -99,6 +99,20 @@
 }
 
 //
+@keyframes animate-left-cont {
+	0% {
+		margin-left: -200%;
+	}
+
+	// 50% {
+	// 	margin-left: 0%;
+	// }
+
+	100% {
+		margin-left: 200%;
+	}
+}
+
 @keyframes animate {
 	0% {
 		background-position: 0 0;

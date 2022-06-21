@@ -1,3 +1,5 @@
+let isLoading = true;
+
 var typed = new Typed(".main_typing-dynamic", {
 	strings: ["Flutter Developer.", "Web Developer.", "UI Designer."],
 	smartBackspace: true,
@@ -142,4 +144,8 @@ particlesJS("particles-js", {
 		},
 	},
 	retina_detect: true,
+}).then(() => {
+	isLoading = false;
 });
+
+console.log(isLoading);
