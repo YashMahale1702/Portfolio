@@ -43,7 +43,7 @@
 
 	//
 	backdrop-filter: blur(10px) saturate(180%);
-	border: 1px solid $border-color;
+	outline: 1px solid $border-color;
 	border-radius: 12px;
 	box-shadow: inset 0 1px 1px rgba($color: black, $alpha: 0.1),
 		0 1.5rem 4rem rgba($color: black, $alpha: 0.15);
@@ -56,6 +56,7 @@
 	&:hover {
 		transform: scale(1.05);
 		box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.3);
+		outline: 3px solid $border-color;
 	}
 
 	& > * {
@@ -75,11 +76,6 @@
 			object-fit: cover;
 			transform: scale(1);
 			transition: all 0.5s ease;
-
-			&:hover {
-				// opacity: 0.8;
-				cursor: url("./../../assets/wave.png"), pointer;
-			}
 		}
 	}
 
@@ -93,7 +89,7 @@
 		color: white;
 		position: relative;
 		cursor: pointer;
-		margin: 0rem 2rem 1rem 2rem;
+		// margin: 0rem 2rem 1rem 2rem;
 		padding: 0.5rem 0rem;
 		outline: none;
 
@@ -141,7 +137,7 @@
 		background-color: $card-color;
 		box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.2);
 		color: white;
-		// border: 2px solid rgba($color: white, $alpha: 0.2);
+		// outline: 1px solid rgba($color: white, $alpha: 0.2);
 		border-radius: 1rem;
 		text-decoration: none;
 		transition: all 0.3s ease;
@@ -149,7 +145,7 @@
 		font-size: 1.7rem;
 
 		&:hover {
-			border: 1px solid rgba($color: $primary-gold, $alpha: 1);
+			outline: 2px solid rgba($color: $primary-gold, $alpha: 1);
 
 			& > span {
 				padding-right: 1.5rem;

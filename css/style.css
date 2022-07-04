@@ -419,9 +419,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -505,8 +505,8 @@ body {
   .nav-list-container-hidden {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }
@@ -753,7 +753,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   -webkit-backdrop-filter: blur(10px) saturate(180%);
           backdrop-filter: blur(10px) saturate(180%);
-  border: 1px solid #30363d;
+  outline: 1px solid #30363d;
   border-radius: 12px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -777,6 +777,7 @@ body {
           transform: scale(1.05);
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  outline: 3px solid #30363d;
 }
 
 .card > * {
@@ -800,10 +801,6 @@ body {
   transition: all 0.5s ease;
 }
 
-.card-img_img:hover {
-  cursor: url("./../../assets/wave.png"), pointer;
-}
-
 .card:hover .card-heading::before {
   -webkit-transform: scaleX(0.6);
           transform: scaleX(0.6);
@@ -816,7 +813,6 @@ body {
   color: white;
   position: relative;
   cursor: pointer;
-  margin: 0rem 2rem 1rem 2rem;
   padding: 0.5rem 0rem;
   outline: none;
 }
@@ -890,7 +886,7 @@ body {
 }
 
 .projects_footer-button:hover {
-  border: 1px solid gold;
+  outline: 2px solid gold;
 }
 
 .projects_footer-button:hover > span {

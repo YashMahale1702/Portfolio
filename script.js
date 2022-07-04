@@ -1,13 +1,17 @@
-let isLoading = true;
+// Typed.js
 
-var typed = new Typed(".main_typing-dynamic", {
+var options = {
 	strings: ["Flutter Developer.", "Web Developer.", "UI Designer."],
 	smartBackspace: true,
 	loop: true,
 	typeSpeed: 100,
 	backSpeed: 40,
-	startDelay: 3000,
-});
+	startDelay: 3300,
+};
+
+var typed = new Typed(".main_typing-dynamic", options);
+
+// For menu options
 
 const container = document.querySelector(".nav-list-container");
 const containerItem = document.querySelector(".nav-list-container-items");
@@ -33,6 +37,8 @@ containerItem.addEventListener("click", function () {
 		menu.classList.replace("fa-xmark", "fa-bars");
 	}
 });
+
+// Particles.js
 
 particlesJS("particles-js", {
 	particles: {
@@ -144,8 +150,4 @@ particlesJS("particles-js", {
 		},
 	},
 	retina_detect: true,
-}).then(() => {
-	isLoading = false;
 });
-
-console.log(isLoading);
