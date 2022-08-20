@@ -1,8 +1,53 @@
-.skills {
+.skills_header {
 	grid-column: 2 / 8;
-	grid-row: 5 / 6;
+	grid-row: 6 / 7;
 
 	width: 100%;
-	margin: 10rem auto;
-	padding: 8rem 0rem 5rem 0rem;
+	margin: 0 auto;
+	padding: 8rem 0rem 3rem 0rem;
+	font-size: 6rem;
+	text-align: center;
+	color: white;
+}
+
+.skills {
+	grid-column: 2 / 8;
+	grid-row: 7 / 8;
+
+	width: 100%;
+	margin: 0 auto;
+	padding: 5rem 0rem 10rem 0rem;
+
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 7rem;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: max-content;
+
+	&_tag {
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+	}
+
+	&_picture {
+		height: 100%;
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+
+	&_img {
+		border-radius: 1rem;
+		height: 100%;
+		width: 100%;
+		// object-fit: cover;
+	}
+
 }
