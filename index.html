@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
         <link
@@ -87,11 +88,11 @@
 
         <!-- Projects -->
 
-        <section class="cards_header" id="projects">
+        <section class="cards_header" id="projects" data-aos="fade-up">
             Projects
         </section>
 
-        <section class="cards">
+        <section class="cards" data-aos="fade-up">
             <a class="card" href="https://play.google.com/store/apps/details?id=com.NexteApps.Weather">
                 <figure class="card-img_picture">
                     <img src="./assets/projects/weatherapp.png" alt="" class="card-img_img" draggable="false" />
@@ -146,15 +147,9 @@
                 </figure>
                 <div class="card-heading">Calendar</div>
             </a>
-            <a class="card" href="https://yashmahale1702.github.io/Spooky-Landing-page/">
-                <figure class="card-img_picture">
-                    <img src="./assets/projects/spooky.svg" alt="" class="card-img_img" draggable="false" />
-                </figure>
-                <div class="card-heading">Spooky Landing Page</div>
-            </a>
         </section>
 
-        <div class="projects_footer">
+        <div class="projects_footer" data-aos="fade-up">
             <a class="projects_footer-button" href="https://github.com/YashMahale1702">
                 <span>More projects</span>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -163,11 +158,11 @@
 
         <!-- Skills -->
 
-        <section class="skills_header" id="skills">
+        <section class="skills_header" id="skills" data-aos="fade-up">
             Skills
         </section>
 
-        <section class="skills">
+        <section class="skills" data-aos="fade-up">
             <div class="skill">
                 <figure class="skill_picture">
                     <img src="./assets/skills/flutter.svg" alt="" class="skill_img" draggable="false" />
@@ -291,6 +286,18 @@
         <!-- <script type="text/javascript" src="./Js/rellax.js"></script> -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
         <!-- <script type="text/javascript" src="simpleParallax.js"></script> -->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js "
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+
+        <script>
+            AOS.init({
+                offset: 100,
+                duration: 1000
+            });
+        </script>
+
     </body>
 
 </html>

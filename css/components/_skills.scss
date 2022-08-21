@@ -4,8 +4,8 @@
 
 	width: 100%;
 	margin: 0 auto;
-	padding: 8rem 0rem 3rem 0rem;
-	font-size: 6rem;
+	padding: 8rem 0rem 0rem 0rem;
+	font-size: 4.5rem;
 	text-align: center;
 	color: white;
 }
@@ -17,7 +17,6 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 5rem 0rem 10rem 0rem;
-
 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -35,6 +34,7 @@
 		font-size: 2rem;
 		color: white;
 		text-align: center;
+		font-family: "IBM Plex Mono", monospace;
 	}
 
 	&_picture {
@@ -49,5 +49,4 @@
 		width: 100%;
 		// object-fit: cover;
 	}
-
 }

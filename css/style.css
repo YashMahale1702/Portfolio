@@ -568,7 +568,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 8rem 0rem 0rem 0rem;
-  font-size: 6rem;
+  font-size: 4.5rem;
   text-align: center;
   color: white;
 }
@@ -578,7 +578,7 @@ body {
   grid-row: 4/5;
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 0rem 5rem 0rem;
+  padding: 6rem 0rem 5rem 0rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
@@ -714,8 +714,8 @@ body {
   grid-row: 6/7;
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 0rem 3rem 0rem;
-  font-size: 6rem;
+  padding: 8rem 0rem 0rem 0rem;
+  font-size: 4.5rem;
   text-align: center;
   color: white;
 }
@@ -744,6 +744,7 @@ body {
   font-size: 2rem;
   color: white;
   text-align: center;
+  font-family: "IBM Plex Mono", monospace;
 }
 .skill_picture {
   height: 100%;
